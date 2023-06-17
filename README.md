@@ -1,6 +1,6 @@
 # World GDP per Capita Dashboard
 
-The World GDP per Capita Dashboard is an interactive data visualization tool that allows users to explore and analyze the growth of global GDP per capita from 1990 to 2018. It provides insights into global economic trends, country comparisons, and the annual percentage growth of GDP per capita.
+The World GDP per Capita Dashboard is an interactive data visualization tool that allows users to explore and analyze the growth of global GDP per capita from 1990 to 2020. It provides insights into global economic trends, country comparisons, and the annual percentage growth of GDP per capita.
 
 ## Features
 
@@ -10,7 +10,7 @@ The World GDP per Capita Dashboard is an interactive data visualization tool tha
 
 
 
-- **Line Chart**: Analyzing Economic Progression - Comparison of Multiple Countries. The line chart feature allows users to explore and compare the economic progression of multiple countries over time. By selecting specific countries from the dropdown menu, users can visualize the development of GDP per capita from 1990 to 2018. This interactive analysis provides insights into the growth trajectories of different nations and enables users to observe trends, fluctuations, and significant milestones in economic prosperity. Gain a comprehensive understanding of the factors influencing GDP per capita and its impact on living standards across countries.
+- **Line Chart**: Analyzing Economic Progression - Comparison of Multiple Countries. The line chart feature allows users to explore and compare the economic progression of multiple countries over time. By selecting specific countries from the dropdown menu, users can visualize the development of GDP per capita from 1990 to 2020. This interactive analysis provides insights into the growth trajectories of different nations and enables users to observe trends, fluctuations, and significant milestones in economic prosperity. Gain a comprehensive understanding of the factors influencing GDP per capita and its impact on living standards across countries.
 ![line_chart](https://github.com/1010sb/world_gdp_per_capita_dashboard/assets/96765388/e0b673da-5fd0-42f3-be27-760895de9e87)
 
 
@@ -19,7 +19,7 @@ The World GDP per Capita Dashboard is an interactive data visualization tool tha
 
 
 
-- **Growth Rate Analysis**: Growth Rate Analysis - Tracking the Percentage Growth of Selected Countries. The Growth Rate Analysis feature enables users to explore the annual percentage growth of GDP per capita for multiple countries from 1990 to 2018. By selecting countries of interest, users can visualize the growth rates over time and gain insights into the economic trajectories of different nations. The line chart showcases the fluctuations, trends, and significant milestones in economic growth, providing a comprehensive understanding of the speed and direction of development. Analyzing growth rates empowers users to compare the performance of countries, identify fast-growing economies, and uncover patterns that drive economic expansion.
+- **Growth Rate Analysis**: Growth Rate Analysis - Tracking the Percentage Growth of Selected Countries. The Growth Rate Analysis feature enables users to explore the annual percentage growth of GDP per capita for multiple countries from 1990 to 2020. By selecting countries of interest, users can visualize the growth rates over time and gain insights into the economic trajectories of different nations. The line chart showcases the fluctuations, trends, and significant milestones in economic growth, providing a comprehensive understanding of the speed and direction of development. Analyzing growth rates empowers users to compare the performance of countries, identify fast-growing economies, and uncover patterns that drive economic expansion.
 ![growth_rate](https://github.com/1010sb/world_gdp_per_capita_dashboard/assets/96765388/76c8fe2b-344d-409a-ba17-c8f1f55d71af)
 
 

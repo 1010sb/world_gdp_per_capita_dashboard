@@ -8,10 +8,9 @@ import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
 
 # Load the CSV file into a pandas DataFrame
-data = pd.read_csv('GDP.csv')
+data = pd.read_csv('gdp_per_capita_1990_2020.csv')
 
-# Drop the '2019' column
-data = data.drop(columns=['2019'])
+
 
 # Convert NaN values to 0
 data = data.fillna(0)
@@ -20,7 +19,7 @@ data = data.fillna(0)
 countries = data['Country '].unique()
 
 # Define the years to include in the year slider
-included_years = [1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018]
+included_years = [1990, 1994, 1998, 2002, 2006, 2010, 2014, 2018, 2020]
 
 # Create the marks dictionary for the year slider
 marks = {i: str(year) for i, year in enumerate(included_years)}
@@ -42,9 +41,9 @@ app.layout = dbc.Container(
                     className='col-8',
                     children=[
                         html.H2("World GDP per Capita Dashboard", style={'text-align': 'center', 'color': 'black'}),
-                        html.H4("Visualizing Global Economic Growth from 1990 to 2018", style={'text-align': 'center', 'color': 'black'}),
+                        html.H4("Visualizing Global Economic Growth from 1990 to 2020", style={'text-align': 'center', 'color': 'black'}),
                         html.P(
-                            """Visualize the growth of world GDP per capita from 1990 to 2018 through this interactive dashboard. 
+                            """Visualize the growth of world GDP per capita from 1990 to 2020 through this interactive dashboard. 
                             Explore the percentage growth in GDP per capita for each country, as represented on a choropleth map. 
                             Gain insights into global economic trends and the impact on living standards worldwide. 
                             Analyze the development of GDP per capita over time using line charts, compare countries using bar charts, 
@@ -100,9 +99,9 @@ app.layout = dbc.Container(
                                     className='col-3',
                                     children=[
                                         html.H4("Progression Analysis", style={'text-align': 'left', 'color': 'black'}),
-                                        html.H6("Comparative Evolution of Selected Countries Over Time: 1990-2018", style={'text-align': 'left', 'color': 'black'}),
+                                        html.H6("Comparative Evolution of Selected Countries Over Time: 1990-2020", style={'text-align': 'left', 'color': 'black'}),
                                         html.P(
-                                            """This line chart showcases the development of GDP per capita from 1990 to 2018. 
+                                            """This line chart showcases the development of GDP per capita from 1990 to 2020. 
                                             Explore the changes in economic prosperity over time as countries progress and evolve. 
                                             By selecting specific countries, you can compare their individual growth trajectories 
                                             and gain insights into the factors influencing their GDP per capita. 
@@ -186,7 +185,7 @@ app.layout = dbc.Container(
                                         html.P(
                                             """Explore the GDP growth rate percentage analysis to understand the dynamic changes in 
                                             economic performance across countries. This visualization showcases the annual growth 
-                                            rates of GDP from 1990 to 2018, providing insights into the speed and direction of 
+                                            rates of GDP from 1990 to 2020, providing insights into the speed and direction of 
                                             economic expansion. Compare the growth rates of different countries and uncover trends, 
                                             fluctuations, and significant milestones. Gain a deeper understanding of the factors 
                                             driving economic growth and the implications for countries' development and prosperity.""",
@@ -217,10 +216,10 @@ app.layout = dbc.Container(
                         ),
                         html.P("Developed By: Suleman Butt", 
                         style={'text-align': 'left', 'font-weight': 'bold', 'color': 'black'}),
-                        html.P("Data Source: Kaggle  ",
+                        html.P("Data Source: Our World in Data ",
                         style={'text-align': 'left', 'font-family': 'Calibri', 'font-style': 'italic', 'display': 'inline'}),
-                        html.A("https://www.kaggle.com/datasets/nitishabharathi/gdp-per-capita-all-countries",
-                        href="https://www.kaggle.com/datasets/nitishabharathi/gdp-per-capita-all-countries",
+                        html.A("https://ourworldindata.org/grapher/gdp-per-capita-worldbank",
+                        href="https://ourworldindata.org/grapher/gdp-per-capita-worldbank",
                         target="_blank",
                         style={'text-align': 'left', 'font-family': 'Calibri', 'color': 'black', 'display': 'inline'})
                     ],

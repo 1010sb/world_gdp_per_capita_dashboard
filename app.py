@@ -28,6 +28,8 @@ marks = {i: str(year) for i, year in enumerate(included_years)}
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.MINTY])
 
+#-------------***** Application Layout *****-----------------
+
 # Define the app layout
 app.layout = dbc.Container(
     style={'font-family': 'Arial, sans-serif', 'padding': '30px'},
@@ -229,6 +231,8 @@ app.layout = dbc.Container(
         )
     ]
 )
+
+#----------***** Callback Funtions ***** -----------
 
 # Define the callback function to update the title based on the selected year
 @app.callback(
